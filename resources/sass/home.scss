@@ -1,0 +1,27 @@
+.home{
+    table td, table th{
+        display: inline-block;
+        padding: 15px 0px !important;
+    }
+    #name_book{
+        width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #name_book a{
+        color: #F44336 !important;
+    }
+    #name_chapper{
+        width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #category, #created_at{
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

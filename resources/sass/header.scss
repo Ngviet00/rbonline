@@ -1,0 +1,103 @@
+header{
+    border-bottom: 1px solid #8080801f;
+    .container{
+        a.navbar-brand{
+            color: #F44336;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        a.nav-link {
+            font-weight: bold;
+        }
+        a.nav-link:hover{
+            color: #F44336 !important;
+        }
+        .navbar-nav li:hover{
+            font-weight: bold;
+        }
+
+        .cbDarkMode{
+            &:hover{
+                cursor: pointer;
+            }
+            margin: 0 auto;
+            .switch {
+                display: flex;
+                height: 36px;
+                position: relative;
+                width: 70px;
+            }
+
+            .switch input {
+                display:none;
+            }
+
+            .slider {
+                background-color: #FFF;
+                border:1px solid #000;
+                bottom: 0;
+                cursor: pointer;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: .4s;
+            }
+
+            .slider:before {
+                background-color: #333;
+                border:1px solid #000;
+                bottom: 3px;
+                content: "";
+                height: 26px;
+                left: 4px;
+                position: absolute;
+                transition: .4s;
+                width: 26px;
+                z-index:421;
+            }
+
+            input:checked + .slider {
+                background-color: #101211;
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(34px);
+                border-color:#CFCFCF;
+                background-color:#EFEFEF;
+            }
+
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            .toggle-moon, .toggle-sun {
+                width:50%;
+                text-align:center;
+                padding:0.25em;
+                position:relative;
+                z-index:420;
+                top: 2px;
+            }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                background-color: #f1f2f3;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+    }
+}

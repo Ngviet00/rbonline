@@ -1,0 +1,69 @@
+.detail_book{
+    .main_image{
+        img{
+            max-width: 80%;
+            height: auto;
+        }
+    }
+
+    .name_book{
+        font-size: 55px;
+        font-weight: bold;
+    }
+    .wp_category_book {
+        padding: 5px 0px;
+        display: block;
+        font-size: 17px;
+
+        .category_book{
+            font-weight: bold;
+        }
+    }
+    .wp_actor{
+        padding-bottom: 5px;
+        display: block;
+        font-size: 17px;
+
+        .actor{
+            color:#1d68a6;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .summary{
+        font-size: 16px;
+    }
+    .chapper{
+        .list_chapper{
+            ul{
+                li{
+                    padding: 8px 0px;
+                    border-bottom: 1px solid #0000000d;
+                    &:last-child{
+                        border: none;
+                    }
+                    a{
+                        font-size: 17px;
+                        color: #091e5a;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .list_category{
+            li{
+                display: inline-block;
+                margin: 8px 2px;
+
+                a{
+                    background: rgb(244,67,54);
+                    padding: 5px 10px;
+                    width: fit-content;
+                    color: white;
+                    border-radius: 4px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

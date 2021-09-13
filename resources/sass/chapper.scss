@@ -1,0 +1,25 @@
+.chapper{
+    .list_chapper{
+        li{
+            padding: 5px 0px;
+            border-bottom: 1px solid #00000008;
+            a{
+                color: #091e5a;
+                font-weight: bold;
+            }
+        }
+    }
+    .content_chapper{
+        font-size: 20px;
+
+        a{
+            pointer-events: none;
+        }
+
+        img{
+            width: 90%;
+            display: block;
+            margin: 0px auto;
+        }
+    }
+}

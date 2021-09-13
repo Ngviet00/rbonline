@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Book extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name','slug','image','category_id', 'author','active','outstanding','description','view'
+    ];
+
+    public function category(){
+        return $this->belongsTo(Category::class, 'category_id', 'id');
+    }
+    public function chapper(){
+        return $this->hasMany(Chapper::class);
+    }
+}
