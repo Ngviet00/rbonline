@@ -65,7 +65,6 @@
                 </div>
             </div>
         </div>
-        <h1 class="mb-3">Bình luận</h1>
         @if( count($listRelativeBooks) > 0 )
             <h2 class="my-4">Cùng thể loại</h2>
             <div class="row mb-2">
